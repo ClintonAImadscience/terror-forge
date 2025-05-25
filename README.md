@@ -1,10 +1,10 @@
-# TERROR FORGE 🧨  
+# TERROR FORGE  
 **Extract clean training data from messy YouTube clips.**  
 Built for red teamers, voice cloners, and audio freaks who need fast, accurate voice isolation.
 
 ---
 
-## 🧠 What This App Does
+##  What This App Does
 
 Terror Forge takes in YouTube links where your target speaker appears — usually interviews, podcasts, or panels — and returns denoised, normalized, speaker-isolated `.wav` files that are ready for voice cloning model training.
 
@@ -12,7 +12,7 @@ It's optimized for **real-world red teaming**, where the only audio available mi
 
 ---
 
-## 🛠️ What It Does Step-by-Step
+## WHat It Does Step-by-Step
 
 1. **Downloads audio from YouTube** via `yt-dlp`  
 2. **Converts to `.wav`** with consistent format (mono, same sample rate)  
@@ -24,7 +24,7 @@ It's optimized for **real-world red teaming**, where the only audio available mi
 
 ---
 
-## 💻 Built With
+##  Built With
 
 - `yt-dlp` for YouTube download  
 - `ffmpeg` + `pydub` for audio slicing + normalization  
@@ -34,7 +34,7 @@ It's optimized for **real-world red teaming**, where the only audio available mi
 
 ---
 
-## 🚀 Why This Exists
+##  Why This Exists
 
 Most open-source audio prep pipelines assume:  
 - You have a single-speaker dataset already  
@@ -44,7 +44,7 @@ I don’t. I work in OSINT, AI red teaming, and real-world conditions where audi
 
 ---
 
-## 🧩 How To Use It
+##  How To Use It
 
 1. Open the script in Google Colab  
 2. Add your Hugging Face token (for `pyannote`)  
@@ -52,25 +52,26 @@ I don’t. I work in OSINT, AI red teaming, and real-world conditions where audi
    - `MIDDLE_SEGMENT_DURATION` to how many seconds you want  
    - `CUSTOM_LABEL` to tag your output files  
    - Your YouTube URLs  
-4. Run Block 5 — it’ll do everything else  
+4. Run Block 5 — it’ll do everything else
+5. Oh wait you'll also need to set the paths for storing the data, to your Google Drive lol  
 
 ---
 
-## 📁 Output
+## Output
 
 You’ll get `.wav` files like:/MyDrive/YouTubeAudio/Hook_Security_CEO_audio_0_SPEAKER_01_48000Hz.wav
 
 
-All ready to plug into a TTS model like FastPitch or fine-tuning stack of your choice.
+
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) License.  
-✅ Free to use commercially  
-✅ Free to remix  
-📣 Just give me credit if you use it
+Free to use commercially   Free to remix  
+Just give me credit if you use it
+
 
 ---
 
